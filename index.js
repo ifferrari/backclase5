@@ -12,11 +12,6 @@ async function leerArchivo (){
 }
 
 
-app.use((req,res,next) => {
-    visitas ++
-    next ()
-})
-
 
 app.get('/', (req,res) => {
     res.send('<h1 style= "color: blue">  "Bienvenido al Servidor express"</h1>')
